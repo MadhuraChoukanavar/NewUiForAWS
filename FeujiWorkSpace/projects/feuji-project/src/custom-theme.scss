@@ -1,0 +1,21 @@
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$FeujiProject-primary: mat.define-palette(mat.$indigo-palette);
+$FeujiProject-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$FeujiProject-warn: mat.define-palette(mat.$red-palette);
+
+$FeujiProject-theme: mat.define-light-theme((
+  color: (
+    primary: $FeujiProject-primary,
+    accent: $FeujiProject-accent,
+    warn: $FeujiProject-warn,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0
+));
+@include mat.all-component-themes($FeujiProject-theme);
+
