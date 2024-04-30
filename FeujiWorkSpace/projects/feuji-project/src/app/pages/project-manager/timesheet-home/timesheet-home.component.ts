@@ -742,7 +742,7 @@ export class TimesheetHomeComponent implements OnInit, AfterViewChecked {
     if( this.fetchedDetails[0].timesheetStatusname === 'Submitted'|| this.fetchedDetails[0].timesheetStatusname === 'Approved')
       {
         Swal.fire({
-          title: 'Timesheet submitted u can not edit',
+          title: 'Timesheet submitted u cannot edit',
           
           confirmButtonText: 'OK',
         });
